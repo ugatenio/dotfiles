@@ -1,4 +1,4 @@
-# Udi Gatenio's .vimrc
+" Udi Gatenio's .vimrc
 
 set nu
 syntax on
