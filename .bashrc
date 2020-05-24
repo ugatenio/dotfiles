@@ -1,6 +1,11 @@
 # Udi Gtaenio's .bashrc
 
 # =============================
+#            DRIVENETS
+# =============================
+source ./.bashrc.drivenets
+
+# =============================
 #            alias
 # =============================
 
@@ -13,15 +18,3 @@ alias gb='git branch'
 alias gc='git checkout'
 alias gcb='git checkout -b'
 alias gc-='git checkout -'
-
-
-# =============================
-#            DRIVENETS
-# =============================
-source ./.bashrc.drivenets
-
-
-
-
-
-
