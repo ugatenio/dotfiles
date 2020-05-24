@@ -3,7 +3,7 @@
 # =============================
 #            DRIVENETS
 # =============================
-source ./.bashrc.drivenets
+source ~/.bashrc.drivenets
 
 # =============================
 #            alias
