@@ -23,7 +23,8 @@ alias gitprune='git remote prune origin'
 
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-bind "$(bind -s | grep '^"\\C-r"' | sed 's/"/"\\C-x/' | sed 's/"$/\\C-m"/')"
+
+# bind "$(bind -s | grep '^"\\C-r"' | sed 's/"/"\\C-x/' | sed 's/"$/\\C-m"/')"
 
 # tmux
 alias tmux='tmux -2'
