@@ -14,7 +14,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 Plugin 'zivyangll/git-blame.vim'
-
+Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -31,6 +31,8 @@ filetype plugin indent on    " required
 
 set number
 syntax on
+set backspace=indent,eol,start
+highlight Pmenu ctermbg=gray guibg=gray
 
 " ========= FZF CONFIG =========
 
@@ -40,4 +42,7 @@ nmap <C-p> :Files<CR>
 " ======== Git Blame ===========
 
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+
+
+let g:ycm_autoclose_preview_window_after_completion = 1
 
