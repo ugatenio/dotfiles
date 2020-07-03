@@ -30,9 +30,14 @@ filetype plugin indent on    " required
 
 
 set number
+set relativenumber
 syntax on
 set backspace=indent,eol,start
-highlight Pmenu ctermbg=gray guibg=gray
+set background=dark
+
+highlight Pmenu ctermfg=white ctermbg=black
+highlight PmenuSel ctermfg=blue ctermbg=white
+
 
 " ========= FZF CONFIG =========
 
