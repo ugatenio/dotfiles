@@ -44,10 +44,12 @@ set showtabline=2
 
 syntax on
 
-highlight Pmenu ctermfg=white ctermbg=black
-highlight PmenuSel ctermfg=blue ctermbg=white
-
 colorscheme onedark
+set background=light
+
+highlight PmenuSel ctermfg=blue ctermbg=white
+highlight LineNr ctermfg=green
+
 
 " ========= FZF CONFIG =========
 nmap <C-p> :Files<CR>
@@ -67,12 +69,39 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 " ========= Airline CONFIG =========
 let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_left_sep = ' '
-let g:airline_left_alt_sep = ' '
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = ' '
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''          
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+  
 " ========= Auto save CONFIG =========
 let g:auto_save = 1  " enable AutoSave on Vim startup
 
