@@ -20,6 +20,7 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin '907th/vim-auto-save'
 Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,8 +45,8 @@ set showtabline=2
 
 syntax on
 
-colorscheme onedark
-set background=light
+colorscheme gruvbox
+set background=dark
 
 highlight PmenuSel ctermfg=blue ctermbg=white
 highlight LineNr ctermfg=green
@@ -67,7 +68,7 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
 
 " ========= Airline CONFIG =========
-let g:airline_theme='onedark'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''          
