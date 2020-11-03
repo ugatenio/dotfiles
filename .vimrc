@@ -42,7 +42,6 @@ set relativenumber
 set encoding=utf-8
 set backspace=indent,eol,start
 set showtabline=2
-set paste
 
 syntax on
 
